@@ -73,10 +73,20 @@ operacion_1= kilos_f * frutas["fresa"]
 operacion_2= kilos_p * frutas["pera"]
 operacion_3= kilos_u * frutas["uva"]
 total= operacion_1 + operacion_2 + operacion_3
-print(f"total a pagar: {total}") '''
+print(f"total a pagar: {total}") 
 
 #Ejercicio 6
 
 numeros=(23,45,6,32,12)
 suma = sum(numeros)
-print(f"la suma de los elementos que se encuentran en la tupla es: {suma}")
+print(f"la suma de los elementos que se encuentran en la tupla es: {suma}")'''
+
+#ejercicio 7 
+
+inventario=[]
+
+
+
+#ejercicio 8
+precios=[2000,5000,7300,]
+

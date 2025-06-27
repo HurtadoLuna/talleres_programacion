@@ -49,18 +49,32 @@ print(f"estos son sus nombres y numero de documeto: {tupla_noombre}")'''
 
 
 
-#------------------------------------EJERCICIOS PRACTICOS------------------------
+#------------------------------------EJERCICIOS PRACTICOS--------------------------25/junio/25
 
 #1 
 #numeros=(1,2,3,4,5)[1]
+
+
+numeros=(1,2,3,4,5)
+
 
 #numeros=(1,2,3,4,5).index(4)
 
 numeros=(1,2,3,4,5).count(2)
 
+tupla=("Hola, que tal", 12, 23.89)
 
+#crea una tupla que contiene otra dupla
 
-print(numeros)
+tupla_externa=(1,2,3,(10,34,5), 4 , 5)
+
+#Acceder al primer valor de la dupla
+
+primer_valor_interno= tupla_externa[3][0]
+
+#mostrar el resultado
+
+print(f"el primer valor de la dupla interna es:{primer_valor_interno}")
 
 
 

@@ -32,4 +32,3 @@ auto.pop("marca")
 
 print(auto)
 
-#problem

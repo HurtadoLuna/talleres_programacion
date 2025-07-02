@@ -52,16 +52,15 @@ print(f"estos son sus nombres y numero de documeto: {tupla_noombre}")'''
 #------------------------------------EJERCICIOS PRACTICOS--------------------------25/junio/25
 
 #1 
-#numeros=(1,2,3,4,5)[1]
-
-
+numeros=(1,2,3,4,5)[1]
+print(numeros)
 numeros=(1,2,3,4,5)
+print(numeros)
 
-
-#numeros=(1,2,3,4,5).index(4)
-
+numeros=(1,2,3,4,5).index(4)
+print(numeros)
 numeros=(1,2,3,4,5).count(2)
-
+print(numeros)
 tupla=("Hola, que tal", 12, 23.89)
 
 #crea una tupla que contiene otra dupla

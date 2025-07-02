@@ -79,7 +79,7 @@ print(f"total a pagar: {total}")
 
 numeros=(23,45,6,32,12)
 suma = sum(numeros)
-print(f"la suma de los elementos que se encuentran en la tupla es: {suma}")'''
+print(f"la suma de los elementos que se encuentran en la tupla es: {suma}")
 
 #ejercicio 7 
 
@@ -88,5 +88,69 @@ inventario=[]
 
 
 #ejercicio 8
-precios=[2000,5000,7300,]
+precios=[2000,5000,7300,3000,2500]
+print(f"los precios actuales son:{precios}")
+descuento= int(input("Ingrese el porcentaje de descuento: "))
+
+precios_descuento=[]
+nuevos_precios1= 2000 - (2000*descuento/100)
+nuevos_precios2= 5000 - (5000*descuento/100)
+nuevos_precios3= 7300 - (7300*descuento/100)
+nuevos_precios4= 3000 - (3000*descuento/100)
+nuevos_precios5= 2500 - (2500*descuento/100)
+precios_descuento.append(nuevos_precios1)
+precios_descuento.append(nuevos_precios2)
+precios_descuento.append(nuevos_precios3)
+precios_descuento.append(nuevos_precios4)
+precios_descuento.append(nuevos_precios5)
+print(f"estos son los nuevos precios con el descuento: {precios_descuento}")
+
+#Ejercicio 9
+
+notas=()
+lista_notas= list(notas)
+nota1=float(input("Ingrese su nota de español:"))
+nota2=float(input("Ingrese su nota de ingles:"))
+nota3=float(input("Ingrese su nota de matematicas:"))
+nota4=float(input("Ingrese su nota de geometria:"))
+
+lista_notas.append(nota1)
+lista_notas.append(nota2)
+lista_notas.append(nota3)
+lista_notas.append(nota4)
+
+lista_notas.sort()
+lista_notas.reverse()
+notas= tuple(lista_notas)
+
+print(f"estas son sus notas: {notas}")
+
+#EJERCICIO 10
+unidad_conversion={
+    "Km":1000,
+    "m":1,
+    "Cm":100
+}
+cantidad=float(input("Ingrese que cantidad desea pasar a metros: "))
+unidad=input("ingrese la unidad a la que la desea pasar: ")
+
+resultado= cantidad * unidad_conversion[unidad]
+
+print(f"su cantidad pasada a metros es: {resultado}")'''
+
+#EJERCICIO 11
+
+lista_precios=[]
+precios=float(input("Ingrese los precios (usando comas):"))
+lista_precios.append(precios)
+
+print(lista_precios)
+
+lista_IVA= []
+
+
+
+print(f"estos son los nuevos precios con el 19% de IVA: {lista_IVA}")
+
+
 

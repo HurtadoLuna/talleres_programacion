@@ -138,19 +138,106 @@ resultado= cantidad * unidad_conversion[unidad]
 
 print(f"su cantidad pasada a metros es: {resultado}")'''
 
-#EJERCICIO 11
-
-lista_precios=[]
-precios=float(input("Ingrese los precios (usando comas):"))
-lista_precios.append(precios)
-
-print(lista_precios)
-
-lista_IVA= []
 
 
+'''#-------------------------------------EJERCICIO 11-----------------------------------
+precio1= int(input("Ingrese el primer precio:"))
+precio2= int(input("Ingrese el segundo precio:"))
+precio3= int(input("Ingrese el tercer precio:"))
 
-print(f"estos son los nuevos precios con el 19% de IVA: {lista_IVA}")
 
+precios_originales= [precio1, precio2, precio3]
+print(f"Estos son los precios originales: {precios_originales}")
 
+operacion1 = (precio1 * 0.19) + precio1
+operacion2 = (precio2 * 0.19) + precio2
+operacion3 = (precio3 * 0.19) + precio3
 
+precios_con_IVA= [operacion1, operacion2, operacion3]
+
+print(f"Estos son los precios con el IVA: {precios_con_IVA}")
+
+#-------------------------------------EJERCICIO 12-----------------------------------
+num1= int(input("Ingrese el primer numero: "))
+num2= int(input("Ingrese el segundo numero: "))
+
+suma= num1 + num2
+resta = num1 - num2
+multi= num1 * num2
+division= num1 / num2
+
+operaciones= ( suma , resta , multi , division )
+
+print (f"Asi queda la tupla con todas las operaciones dentro: {operaciones}")
+
+#-------------------------------------EJERCICIO 13-----------------------------------
+nombre1= input("Por favor ingrese su nombre: ")
+nota1 = float(input("Ingrese su nota: "))
+
+nombre2= input("Por favor ingrese su nombre: ")
+nota2 = float(input("Ingrese su nota: "))
+
+nombre3= input("Por favor ingrese su nombre: ")
+nota3 = float(input("Ingrese su nota: "))
+
+nombres_y_notas = {
+    nombre1:nota1,
+    nombre2: nota2,
+    nombre3: nota3
+ }
+
+promedio = nota1 + nota2 + nota3 / 3
+print (f"asi queda el diccionario: {nombres_y_notas}, este es el promedio general: {promedio}")
+
+#-------------------------------------EJERCICIO 14-----------------------------------
+salario1=int(input("Ingrese el salario del primer empleado: "))
+salario2=int(input("Ingrese el salario del segudo empleado: "))
+salario3=int(input("Ingrese el salario del tercer empleado: "))
+salario4=int(input("Ingrese el salario del cuarto empleado: "))
+salario5=int(input("Ingrese el salario del quinto empleado: "))
+
+operacion1 = salario1 + (salario1 * 0.10)
+operacion2 = salario2 + (salario2 * 0.10)
+operacion3 = salario3 + (salario3 * 0.10)
+operacion4 = salario4 + (salario4 * 0.10)
+operacion5 = salario5 + (salario5 * 0.10)
+
+Lista_de_salario= [operacion1, operacion2, operacion3, operacion4, operacion5]
+
+print(f"Asi se ve la lista de los salarios {Lista_de_salario}")
+
+#-------------------------------------EJERCICIO 15-----------------------------------
+productos_sin_impuestos = {
+    "huevos": 3000,
+    "leche": 4000,
+    "harina": 2500
+}
+
+impuestos_solicitados = float(input("Ingrese el porcentaje: "))
+
+producto_1= productos_sin_impuestos["huevos"] + (productos_sin_impuestos["huevos"] * impuestos_solicitados /100)
+producto_2= productos_sin_impuestos["leche"] + (productos_sin_impuestos["leche"] * impuestos_solicitados /100)
+producto_3= productos_sin_impuestos["harina"] + (productos_sin_impuestos["harina"] * impuestos_solicitados /100)
+
+print (f"estos son los productos con el impuesto incluido: {producto_1}, {producto_2}, {producto_3}")'''
+
+'''#-------------------------------------EJERCICIO 16-----------------------------------
+edad1 = int(input("Ingrese la primera edad: "))
+edad2 = int(input("Ingrese la segunda edad: "))
+edad3 = int(input("Ingrese la tercera edad: "))
+
+edades=[ edad1, edad2, edad3 ]
+
+menores=0
+mayores=0
+if edades[0] >= 18:
+    menores = mayores +1
+else: mayores = menores +1
+if edades[1] >= 18:
+    menores = mayores +1
+else: mayores = menores +1
+if edades[2] >= 18:
+    menores = mayores +1
+else: mayores = menores +1
+
+print(f"Esta es la cantidad de menores: {menores}, Estas es la cantidad de mayores: {mayores}")'''

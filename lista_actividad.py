@@ -90,9 +90,32 @@ print(nueva_lista)
 
 
 #--------------------------------------ACTIVIDAD LISTAS----------------------------
-LISTA1=[100]
-LISTA1.append('Hola Mundo')
+LISTA1= []
+LISTA1.append(100)
+LISTA1.append("Hola Mundo")
 
+print(LISTA1)
 
+LISTA2= []
+LISTA2.append("Hola y Adios")
+LISTA2.append(300)
 
-print(LISTA1)'''
+print(LISTA2)
+
+LISTA3= []
+LISTA3= LISTA1.copy()
+LISTA3.remove("Hola Mundo")
+
+print(LISTA3)
+
+LISTA4= []
+LISTA4= LISTA2.copy()
+LISTA4.clear()
+
+print(LISTA4)
+
+LISTA5= []
+LISTA5= LISTA4.copy()
+LISTA5= LISTA3.copy()
+
+print(LISTA5)'''

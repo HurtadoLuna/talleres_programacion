@@ -118,10 +118,19 @@ mes=int(input("ingrese un numero del 1 al 12 por favor: "))
 if 1 <= mes <= 12:
     print(f"el numero {mes} es el mes de :{meses[mes]}")
 else:
-    print("hubo un error")'''
+    print("hubo un error")
 
 #ejercicio 10
 num=int(input("Por avor ingrese un numero de 4 digitos"))
 
-if len(num)==4 and num.startwith("1"):
+if len(num)==4 and num.isdigit():
+    if num.
     print("el primer digito es el numero 1")
+
+#ejercicio11
+#ejercicio12'''
+
+frutas=["manzana":,"pera", "piña"]
+precios={
+    
+}

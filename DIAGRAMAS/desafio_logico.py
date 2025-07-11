@@ -130,7 +130,7 @@ if len(num)==4 and num.isdigit():
 #ejercicio11
 #ejercicio12'''
 
-frutas=["manzana":,"pera", "piña"]
+frutas=["manzana","pera", "piña"]
 precios={
-    
+
 }

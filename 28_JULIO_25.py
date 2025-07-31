@@ -183,7 +183,7 @@ if nombres[3] == "Marta":
 else:
     print("usted ha ingresado un nombre diferente")
 
-#15 CREA UNA LISTA CON TRES COLORES. CAMBIA EL SEGUNDO COLOR SOLO SI ES IGUAL A "AZUL" Y MUESTRA LA LISTA ACTUALIZADA
+#15. CREA UNA LISTA CON TRES COLORES. CAMBIA EL SEGUNDO COLOR SOLO SI ES IGUAL A "AZUL" Y MUESTRA LA LISTA ACTUALIZADA
 
 colores= [input("ingrese un color :"), input("ingrese un color: "), input("ingrese un color: ") ]
 print(f"asi esta la lista original {colores}")
@@ -196,12 +196,45 @@ if colores[2] == "azul"
 
 #16. CREA UNA TUPLA. SI EL PRIMER VALOR ES MENOR QUE EL ULTIMO, MUESTRA "ORDEN ASCENDENTE", SI NO, "ORDEN DESCENDENTE"
 
-numeros=(int(input("Ingrese el primer numero:")), int(input("Ingrese el segundo numero:")), int(input("Ingrese el tercer numero:")), int(input("Ingrese el cuarto numero:")))
+ int(input("Ingr ese el segundo numero:"))numeros=(int(input("Ingrese el primer numero:")),, int(input("Ingrese el tercer numero:")), int(input("Ingrese el cuarto numero:")))
 print(f"asi esta la Tupla: {numeros}")
 
 if numeros[0] < numeros[3]:
     print(f"la tupla {numeros} esta ordenada de forma ascendente")
 else: 
-    print(f"la tupla {numeros} esta ordenada de forma descendiente")'''
+    print(f"la tupla {numeros} esta ordenada de forma descendiente")
 
 #17. DADA LA TUPLA, VERIFICA SI EL SEGUNDO VALOR ES MAYOR A 30, SI LO ES "MUESTRAR EDAD MAYOR A 30" , SI NO "EDAD MENOR O IGUAL A 30"
+
+edad=(int(input("Ingrese la primera edad: ")), int(input("Ingrese la segunda edad: ")), int(input("Ingrese la tercera edad: ")), int(input("Ingrese la cuarta edad: ")) )
+
+if edad[1] < 30:
+    print(f"la sedunda edad '{edad[1]}', es menor a 30")
+elif edad[1] == 30:
+    print(f"la sedunda edad '{edad[1]}', es igual a 30")
+else:
+    print(f"la segunda edad '{edad[1]}', es mayor mayor a 30")
+
+#18. CONVIERTE LA TUPLA A LISTA, CAMBIA EL SEGUNDO VALOR A 10 SOLO SI ES IGUAL A 2, LUEGO VUELVELA A CONVERTIR A TUPLA Y MUESTRALA
+
+numeros=(int(input("Ingrese el primer numero:")), int(input("Ingrese el segundo numero:")), int(input("Ingrese el tercer numero:")))
+numeros_lista=list(numeros)
+if numeros_lista[1] == 10:
+    numeros_lista[1]= 2
+    print("el segundo valor de la lista ha cambiado")
+else:
+    print("la lista quedará igual")
+
+new_tupla=tuple(numeros_lista)
+
+print(f"asi queda la nueva tupla : {new_tupla}")'''
+
+#19. DADA LA TUPLA, ACCEDE AL SEGUNDO VALOR Y SI ES MAYOR DE 5, MUESTRA 'COORDENADA ALTA', SI NO, 'COORDENADA BAJA'
+
+coordenadas=(int(input("Ingrese el primer punto: ")), int(input("ingrese el segundo punto: ")))
+if coordenadas[1] > 5 :
+    print(f"la coordenada {coordenadas[1]}, es una coordenada alta")
+else:
+    print(f"la coordenada {coordenadas[1]}, es una coordenada baja")
+
+#20. 

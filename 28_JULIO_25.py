@@ -188,8 +188,12 @@ else:
 colores= [input("ingrese un color :"), input("ingrese un color: "), input("ingrese un color: ") ]
 print(f"asi esta la lista original {colores}")
 
-if colores[2] == "azul" 
+if colores[1] == "azul" :
+      colores[1] = "amarillo"
+else:
+ print("la lista quedaria igual sin cambio alguno")
 
+print(f"asi quedaria la lista: {colores}")
 
 
 #----------------------------------------EJERCICIOS CON TUPLA-----------------------------------
@@ -227,7 +231,7 @@ else:
 
 new_tupla=tuple(numeros_lista)
 
-print(f"asi queda la nueva tupla : {new_tupla}")'''
+print(f"asi queda la nueva tupla : {new_tupla}")
 
 #19. DADA LA TUPLA, ACCEDE AL SEGUNDO VALOR Y SI ES MAYOR DE 5, MUESTRA 'COORDENADA ALTA', SI NO, 'COORDENADA BAJA'
 
@@ -237,4 +241,88 @@ if coordenadas[1] > 5 :
 else:
     print(f"la coordenada {coordenadas[1]}, es una coordenada baja")
 
-#20. 
+#20. COMPARA SI LAS TUPLAS SON IGUALES. SI LO SON, MUESTRA "TUPLA IGUALES", SI NO, "TUPLAS DIFERENTES"
+
+coordenada1=( int(input("Ingrese el primer punto: ")), int(input("ingrese el segundo punto: ")))
+coordenada2=( int(input("Ingrese el primer punto: ")), int(input("ingrese el segundo punto: ")))
+
+if coordenada1 == coordenada2:
+    print(f"las tuplas {coordenada1} y {coordenada2} son iguales")
+else:
+    print(f"las tuplas {coordenada1} y {coordenada2} no son iguales")
+
+#----------------------------------------EJERCICIOS CON DICCIONARIO----------------------------------------
+
+#21.  CREA UN DICCIONARIO. SI LA EDAD ES MAYOR A 18, MUESTRA "ADULTO" SI NO MUESTRA "MENOR DE EDAD"
+
+informacion={ 
+    "Nombre": input("Ingrese su nombre: "),
+    "edad": int(input("Ingrese su edad: "))
+
+}
+
+if informacion['edad'] >= 18 :
+    print(f" {informacion['Nombre']} usted tiene, {informacion['edad']} años por lo tanto es mayor de edad")
+else:
+    print(f"{informacion['Nombre']}  usted tiene, {informacion['edad']} años por lo tanto es menor de edad")
+
+#22. CREA UN DICCIONARIO. SI LA EDAD ES MAYOR A 18, CAMBIA EL VALOR EDAD A 21, LUEGO MUESTRA EL DICCIONARIO
+
+informacion={ 
+    "Nombre": input("Ingrese su nombre: "),
+    "edad": int(input("Ingrese su edad: "))
+
+}
+
+if informacion["edad"] == 18:
+    informacion["edad"] = 21
+    print("la edad ingresada principalmente ha sido cambiada a 21")
+else:
+    print("el diccionario quedará igual pues la edad no es igual a 18")
+
+print(f"este seria el diccionario: {informacion}")
+
+#23. CREA UN DICCIONARIO. SI LA CLAVE "CIUDAD" NO EXISTE, AGREGALA CON EL VALOR "BOGOTA" Y MUESTRA EL DICCIONARIO
+usuario={
+   "nombre": input("ingrese su nombre por favor: ")
+}
+
+if "ciudad" not in usuario:
+    usuario["ciudad"]= "Bogota"
+    print("se le agregara la clave 'ciudad' pues esta no esta en el diccionario")
+else:
+    print("la clave ciudad ya eSsta en el diccionario")
+
+print(f"{usuario['ciudad']}asi queda el diccionario con su clave nueva {usuario}")
+
+#24. DADO EL DICCIONARIO. VERIFICA SI LA CLAVE 'PRECIO' EXISTE. SI EXISTE, MUESTRA SU VALOR, SI NO MUESTRA NO HAY PRECIO
+
+producto={
+   "producto": int(input("Por favor ingrese el producto: ")),
+   "precio" : int(input("Por favor ingrese el precio del producto: "))
+
+}
+
+if producto["precio"] == producto["precio"]:
+    print(f"la clave 'precio' si existe y su valor es: {producto['precio']}")
+else:
+    print("no hay precio")
+
+#25. CREA UN DICCIONARIO SI PAN ESTA EN EL DICCIONARIO, MUESTRA SU PRECIO, SI NO , MUESTRA 'PRODUCTO NO DISPONIBLE'
+
+producto1=input("ingrese el nombre de un producto:")
+producto2=input("ingrese el nombre de un producto: ")
+
+precios={
+    producto1: int(input("ingrese el precio del primer producto: ")),
+    producto2: int(input("ingrese el precio del primer producto: "))
+
+}
+print(precios)
+
+if producto1 == "pan":
+    print(f"el pan tiene un precio de: {precios[producto1]}")
+elif producto2 == "pan": 
+    print(f"el pan tiene un precio de: {precios[producto2]}")
+else:
+    print("'pan' producto no disponible")'''

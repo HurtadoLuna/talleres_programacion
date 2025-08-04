@@ -190,6 +190,7 @@ print(f"asi esta la lista original {colores}")
 
 if colores[1] == "azul" :
       colores[1] = "amarillo"
+      print(" el color que ingresaste cambiara a amarilo")
 else:
  print("la lista quedaria igual sin cambio alguno")
 
@@ -298,24 +299,24 @@ print(f"{usuario['ciudad']}asi queda el diccionario con su clave nueva {usuario}
 #24. DADO EL DICCIONARIO. VERIFICA SI LA CLAVE 'PRECIO' EXISTE. SI EXISTE, MUESTRA SU VALOR, SI NO MUESTRA NO HAY PRECIO
 
 producto={
-   "producto": int(input("Por favor ingrese el producto: ")),
+   "producto": input("Por favor ingrese el producto: "),
    "precio" : int(input("Por favor ingrese el precio del producto: "))
 
 }
 
-if producto["precio"] == producto["precio"]:
+if "precio" in producto:
     print(f"la clave 'precio' si existe y su valor es: {producto['precio']}")
 else:
     print("no hay precio")
 
-#25. CREA UN DICCIONARIO SI PAN ESTA EN EL DICCIONARIO, MUESTRA SU PRECIO, SI NO , MUESTRA 'PRODUCTO NO DISPONIBLE'
+#25. CREA UN DICCIONARIO SI PAN ESTA EN EL DICCIONARIO, MUESTRA SU PRECIO, SI NO , MUESTRA 'PRODUCTO NO DISPONIBLE
 
 producto1=input("ingrese el nombre de un producto:")
 producto2=input("ingrese el nombre de un producto: ")
 
 precios={
     producto1: int(input("ingrese el precio del primer producto: ")),
-    producto2: int(input("ingrese el precio del primer producto: "))
+    producto2: int(input("ingrese el precio del segundo producto: "))
 
 }
 print(precios)
@@ -325,4 +326,4 @@ if producto1 == "pan":
 elif producto2 == "pan": 
     print(f"el pan tiene un precio de: {precios[producto2]}")
 else:
-    print("'pan' producto no disponible")'''
+    print("'pan' producto no disponible") '''
